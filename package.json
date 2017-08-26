@@ -1,0 +1,19 @@
+{
+  "name": "mykeralamess",
+  "version": "1.0.0",
+  "description": "starting code for mykeralamess app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkraken007/mykeralamess.git"
+  },
+  "author": "darkraken007",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkraken007/mykeralamess/issues"
+  },
+  "homepage": "https://github.com/darkraken007/mykeralamess#readme"
+}
