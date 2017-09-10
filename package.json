@@ -19,6 +19,7 @@
   "homepage": "https://github.com/darkraken007/mykeralamess#readme",
   "dependencies": {
     "express": "^4.15.4",
+    "express-session": "^1.15.5",
     "googleapis": "^21.3.0"
   }
 }
