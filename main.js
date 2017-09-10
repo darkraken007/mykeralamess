@@ -4,6 +4,7 @@ var Session = require('express-session');
 var google = require('googleapis');
 var OAuth2 = google.auth.OAuth2;
 var plus = google.plus('v1');
+var path = require('path');
 const ClientId = "303439398728-3pb3fc30vveotv1b8glfihmplptg9pp0.apps.googleusercontent.com";
 const ClientSecret = "vIyBNFvlBJ2rzJw6YuvS7l1b";
 const RedirectionUrl = "http://www.mykeralamess.com/thankyou";
@@ -17,6 +18,7 @@ app.use(Session({
     resave: true,
     saveUninitialized: true
 }));
+
 
 var port = 8080;
 var server = http.createServer(app);
@@ -47,9 +49,5 @@ function getAuthUrl () {
 
 
 app.use("/", function (req, res) {
-    var url = getAuthUrl();
-    res.send(`
-        &lt;h1&gt;Authentication using google oAuth&lt;/h1&gt;
-        &lt;a href=${url}&gt;Login&lt;/a&gt;
-    `)
+    res.sendFile(path.join(__dirname + '/login.html'))
 });
