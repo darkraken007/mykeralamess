@@ -18,13 +18,6 @@ app.use(Session({
     saveUninitialized: true
 }));
 
-//this is the base route
-app.use("/", function (req, res) {
-    res.send(`
-        &lt;h1&gt;Authentication using google oAuth&lt;/h1&gt;
-    `)
-});
-
 var port = 8080;
 var server = http.createServer(app);
 server.listen(port);
